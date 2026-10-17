@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade — GPS Bússola</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #111; }
+        hr { border: 0; height: 1px; background: #e2e8f0; margin: 20px 0; }
+        code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<h1>Política de Privacidade — GPS Bússola</h1>
+<p><strong>Última atualização:</strong> Outubro de 2026</p>
+<p>A sua privacidade é uma prioridade fundamental. Esta Política de Privacidade descreve de forma clara e transparente como a aplicação <strong>GPS Bússola</strong> trata as informações recolhidas, processadas e armazenadas durante a sua utilização, em estrita conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018), o Regulamento Geral sobre a Proteção de Dados da União Europeia (GDPR) e as diretrizes da Google Play Store.</p>
+
+<hr>
+
+<h3>1. Dados de Localização e GPS (Princípio de Minimização e Privacidade Offline)</h3>
+<p>O <strong>GPS Bússola</strong> é uma ferramenta de navegação terrestre, marítima e orientação tática. Para prestar os seus serviços essenciais, a aplicação requer acesso aos dados de localização geográfica do seu dispositivo.</p>
+<ul>
+    <li><strong>Localização Precisa em Primeiro Plano (Foreground):</strong> Utilizada para determinar as coordenadas geográficas (latitude, longitude e altitude), cálculo de rumo, calibração da declinação magnética e exibição da bússola em tempo real.</li>
+    <li><strong>Gravação Contínua de Trilhas (Foreground Service):</strong> Caso opte ativamente por iniciar a gravação de uma trilha ou trajeto, a aplicação utilizará um Serviço em Primeiro Plano (<em>Foreground Service</em> do tipo <code>location</code>) acompanhado de uma notificação permanente visível na barra de estado. Isto permite o registo contínuo da rota mesmo com o ecrã desligado ou com a aplicação minimizada.</li>
+    <li><strong>Sem Rastreio Oculto em Segundo Plano:</strong> A aplicação <strong>não</strong> recolhe nem monitoriza a sua localização em segundo plano de forma oculta ou sem o seu conhecimento deliberado.</li>
+    <li><strong>Armazenamento 100% Local:</strong> As suas coordenadas, pontos salvos (waypoints), rotas e ficheiros GPX são gravados exclusivamente na base de dados interna do seu aparelho (<code>Room Database</code>). Nenhuma coordenada pessoal ou histórico de deslocação é enviado, comercializado ou sincronizado com servidores externos do programador.</li>
+</ul>
+
+<hr>
+
+<h3>2. Rede Local e Conectividade Sem Fios (Nearby Connections e Bluetooth)</h3>
+<p>Para o funcionamento do módulo <strong>Chat SOS / Comunicação Offline</strong>, a aplicação utiliza a API Google Nearby Connections via Bluetooth e Wi-Fi Direct:</p>
+<ul>
+    <li><strong>Finalidade Exclusiva:</strong> Permitir a troca de mensagens de texto e balizas de emergência diretamente entre dispositivos próximos em áreas sem cobertura de rede móvel (comunicação ponto a ponto / P2P).</li>
+    <li><strong>Consentimento Manual e Handshake:</strong> Nenhuma ligação é estabelecida de forma automática ou silenciosa. Cada pedido de emparelhamento exige confirmação manual bilateral por meio de código numérico de segurança (<em>authentication digits</em>).</li>
+    <li><strong>Isolamento de Uso:</strong> As permissões de rádio (Bluetooth e Wi-Fi) são utilizadas exclusivamente para o canal de dados local, não sendo aproveitadas para inferência de localização pessoal.</li>
+</ul>
+
+<hr>
+
+<h3>3. Serviços Externos e Chamadas de Rede</h3>
+<ul>
+    <li><strong>Esri ArcGIS Location Platform:</strong> Utilizado para o fornecimento de camadas cartográficas (mapas topográficos e imagens de satélite). O tráfego de dados restringe-se ao carregamento dos blocos de mapa necessários.</li>
+    <li><strong>Open-Meteo API & WAQI:</strong> Consultas anónimas baseadas na latitude e longitude arredondadas para fornecer previsões meteorológicas, índice de qualidade do ar (IQAr) e modelo digital de elevação. Nenhum dado pessoal identificável é anexado.</li>
+    <li><strong>AviationWeather.gov & NOAA SWPC:</strong> Obtenção pública de relatórios meteorológicos de aeródromos (METAR) e índices geomagnéticos planetários (Kp).</li>
+</ul>
+
+<hr>
+
+<h3>4. Publicidade e Monetização (Google AdMob e UMP SDK)</h3>
+<p>Para viabilizar a manutenção da aplicação, são exibidos anúncios através do <strong>Google AdMob</strong> (Google LLC):</p>
+<ul>
+    <li><strong>Formato e Localização:</strong> Banners adaptativos apenas em ecrãs de consulta secundários (como a lista de salvos). O ecrã da bússola e mapas permanecem livres de publicidade. Intersticiais apenas em momentos pontuais de conclusão de tarefa.</li>
+    <li><strong>Gestão de Consentimento (Google UMP SDK):</strong> Integração com a plataforma oficial de consentimento da Google para cumprir as regras do GDPR e LGPD.</li>
+</ul>
+
+<hr>
+
+<h3>5. Direitos do Utilizador</h3>
+<p>Pode eliminar todos os seus dados guardados a qualquer momento na secção "Salvos", ou revogar as permissões de GPS e sensores nas definições do sistema Android.</p>
+
+<hr>
+
+<h3>6. Contacto</h3>
+<p>Dúvidas ou esclarecimentos:<br>
+<strong>Responsável:</strong> Jorge Henrique<br>
+<strong>Localidade:</strong> Rio de Janeiro — RJ, Brasil</p>
+
+</body>
+</html>
